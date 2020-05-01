@@ -22,8 +22,8 @@
    
     $myblogs->output();
   ?>
-  <h2>Find Article by ID</h2>
-  <p>The article with id:<?php $id ?> is:</p>
+  <h2>Display Article by ID</h2>
+  <p>This article with id:<?php $id ?> is:</p>
   <?php
     $myblogs->findblogByIndex( 2 );
   ?> -->
