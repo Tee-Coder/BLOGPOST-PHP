@@ -22,14 +22,14 @@ class Blogs
       }
       // If blogs are NOT an array.
       else
-      { // Show a warning in the browser.
-        echo '<p>WARNING: The blogs appear to be malformed!</p>';
+      { // Display a warning in the browser
+        echo '<p>WARNING: Something seems to be wrong with this blog!</p>';
       }
     }
     // If file doesn't exist.
     else
-    { // Show a warning in the browser.
-      echo '<p>WARNING: Your file doesn\'t exist!</p>';
+    { // Display a warning in the browser.
+      echo '<p>WARNING: This file doesnt exist!</p>';
     }
   }
 
@@ -65,16 +65,15 @@ class Blogs
         // Output that blog!
         $displayBlog->output();
       }
-      // If the blog is not found...
+      // If this blogpost is not found...
       else
       { // Output a warning for the user.
-        echo '<p>Sorry, we couldn\'t find a blog at ID: '.$id.'!</p>';
+        echo '<p>Nothing could be found for blog at ID: '.$id.'!</p>';
       }
     }
-    // No ID, or an invalid ID was passed.
     else
     { // Output a warning for the user.
-      echo '<p>No ID, or an invalid ID was passed; unable to find blog for ID: '.$id.'.</p>';
+      echo '<p>The ID passed is invalid; not able to locate blog for ID: '.$id.'.</p>';
     }
   }
 }
