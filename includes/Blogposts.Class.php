@@ -1,6 +1,6 @@
 <?php // include_once is used to ensure this code is not included/run multiple times.
 // In the case of a class declaration, it would cause an error to run multiple times!
-include_once dirname( __FILE__ ) . '/Blog.Class.php';
+include_once dirname( __FILE__ ) . '/Blogpost.Class.php';
 class Blogs
 {
   // Properties.
@@ -55,7 +55,7 @@ class Blogs
   { // Check if the submission is a number (integer.)
     if ( is_integer( $id ) )
     { // Check if the blog at this INDEX even EXISTS!?
-      if ( isset( $this->allBlogs[$id] ) )
+      if ( isset( $this->theBlogs[$id] ) )
       { // Retrieve that blog from the array!
         $displayBlog = new Blog(
           $this->theBlogs[$id]->id,
