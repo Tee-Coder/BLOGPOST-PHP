@@ -1,6 +1,5 @@
 <?php
 
-
   ini_set( 'display_errors', 1 );
   ini_set( 'display_startup_errors', 1 );
   error_reporting( E_ALL );
@@ -15,7 +14,7 @@
 
 </head>
 <body>
-  <h1>Blogs</h1>
+  <h1>Blogposts</h1>
   <?php include './includes/navigation.php'; ?>
   <?php
     $myblogs = new Blogs( dirname( __FILE__ ) . '/data/articles.json');
@@ -25,7 +24,7 @@
   <h2>Display Article by ID</h2>
   <p>This article with id:<?php $id ?> is:</p>
   <?php
-    $myblogs->findblogByIndex( 2 );
-  ?> -->
+    $myblogs->findblogByIndex( 10 );
+  ?>
 </body>
 </html>

@@ -1,5 +1,4 @@
 <?php 
-    // This file's code will execute right here in the file
    
 ?>
 <!DOCTYPE html>
@@ -13,6 +12,5 @@
 <h1><?php echo $title; ?></h1>
 <?php include './includes/navigation.php'; ?>
 
-    
 </body>
 </html>
